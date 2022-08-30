@@ -10,5 +10,6 @@ class Material(object):
         self.Ys = Ys
 
 steel_1020 = Material('steel_1020', 29.5*10**6, 40*10**3) #  # Modulus Elasticity PSI, Yeild Strength PSI Steel 1020
+a500 = Material('carbon_steel', 31.5*10**6, 60*10**3) #  # Modulus Elasticity PSI, Yeild Strength PSI Steel 1020
 stainless_304 = Material('stainless_304', 28*10**6, 31.2*10**3)
 aluminum_6061 = Material('aluminum_6061', 10.2*10**6, 35*10**3)
