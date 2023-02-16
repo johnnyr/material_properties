@@ -19,7 +19,7 @@ class RectangleBeam(object):
         self.t = core_thickness
         self.l = length
         self.material = material
-        print(str(name) + " Material = " + material.name + ". Modulus Elasticity " + str(material.E) + " PSI. Yeild Strength " + str(material.Ys) + " PSI")
+        print(str(name) + " Material = " + material.name + ". Modulus Elasticity " + str(material.E) + " PSI. Yield Strength " + str(material.Ys) + " PSI")
         msg = "Rectangle Beam " + str(width) + "in Wide " + str(thickness) + "in Thick " + str(length) + "in Long "
         if self.h:
             msg += str(self.h) + "x" + str(self.t) + "in Hollow Core"
@@ -35,7 +35,7 @@ class RectangleBeam(object):
             return self.b * self.d - self.h * self.t
         return self.b * self.d
     @property
-    def I(self): # Moment of Inertia
+    def I(self): # Moment of Inertia in Inches
         if self.h:
             return ( (self.b * self.d**3) - (self.h * self.t**3) ) / 12
         return (self.b * self.d**3) / 12
@@ -65,7 +65,7 @@ class CircleBeam(object):
         self.d = d
         self.l = l
         self.material = material
-        print(str(name) + " Material = " + material.name + ". Modulus Elasticity " + str(material.E) + " PSI. Yeild Strength " + str(material.Ys) + " PSI")
+        print(str(name) + " Material = " + material.name + ". Modulus Elasticity " + str(material.E) + " PSI. yield Strength " + str(material.Ys) + " PSI")
         msg = "Circle Beam " + str(D) + "in Diameter " + str(l) + "in Long "
         if self.d:
             msg + str(d) + "in Hollow Core"

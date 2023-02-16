@@ -27,7 +27,7 @@ class Stress(object):
             self.x = 0.5 * beam.l
         msg = "Beam " + beam.name + " Load = " + str(load.W) + "lbs"
         if load.drop_height_m:
-            msg += ". Drop Height " + str(load.drop_height_m) + "m. Distance after impact " + str(load.d)
+            msg += ". Drop Height " + str(load.drop_height_m) + "m. Distance after impact " + str(load.d) + ". Impact force " + str(self.load.flb) + "lbs"
         print(msg)
         if support not in support_options:
             print("No Support selected")

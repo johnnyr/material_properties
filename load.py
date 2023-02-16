@@ -33,6 +33,5 @@ class Load(object):
     @property
     def force(self):
         if self.drop_height_m:
-            print("Impact force " + str(self.flb) + "lbs")
             return self.flb
         return self.W
